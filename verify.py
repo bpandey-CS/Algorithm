@@ -1,5 +1,13 @@
 import cProfile
 
+def rec(n):
+    if n>=1:
+        return rec(n-1)
+        print(n)
+        return rec(n-1)
+        
+        
+
 def func(n):
     for i in range(1,11):
         count_j = 0
@@ -12,4 +20,5 @@ def func(n):
         print("j = {}".format(count_j))
         print("k = {}\n".format(count_k))
 
-cProfile.run('func(10)')
+# cProfile.run('func(10)')
+cProfile.run('rec(10)')
