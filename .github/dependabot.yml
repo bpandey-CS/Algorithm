@@ -11,7 +11,8 @@ updates:
       interval: "daily"
       time: "09:00"
       timezone: "Asia/Kolkata"
-      reviewers: "BikashPandey17"
+    reviewers:
+      - "BikashPandey17"
     rebase-strategy: "disabled"
     pull-request-branch-name:
       # Separate sections of the branch name with a hyphen
