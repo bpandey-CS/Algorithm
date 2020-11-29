@@ -11,7 +11,7 @@ char *resize(char *p, int capacity);
 int preceedence(char op); // takes in chracter and gives operator preceedence 
 enum oper{minus, plus, divide, multiply, bitwiseand, dollar, rightbracket, leftbracket}; 
 
-void main10(){
+void main(){
     int count=0, capacity=DEFUALTSIZE, pre;
     char *output, *stack, o;
     output = (char *)malloc(DEFUALTSIZE);
