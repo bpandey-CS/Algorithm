@@ -46,16 +46,17 @@ class BinaryTree:
     def postorder(self):
         # right - left - root
         if self:
-            self.getRightChild().preorder()
-            self.getLeftChild().preorder()
+            self.getRightChild().postorder()
+            self.getLeftChild().postorder()
             print(self.getRootVal())
     
     def inorder(self):
         # left - root - right
         if self:
-            self.getLeftChild().preorder()
-            self.getRightChild().preorder()
+            self.getLeftChild().inorder()
             print(self.getRootVal())
+            self.getRightChild().inorder()
+            
 
 r = BinaryTree('a')
 print(r.getRootVal())
